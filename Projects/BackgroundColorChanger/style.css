@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 25px;
+    
+}
+
+.container {
+    margin: 10% 0 0 0;
+    width:80%;
+    height:400px;
+    max-width: 1000px;
+    background: rgb(245, 120, 120);
+    border-radius: 20px;
+}
+
+.tbody {
+    display:flex;
+    justify-content: space-between;
+    margin: 60px 0 0 0;
+}
+
+select {
+    width: 170%;
+}
+
+.tname {
+    margin: 0 0 120px 120px; 
+}
+
+.tselect {
+    margin: 0 120px 120px 0   
+}
+
+.tbtn {
+    display:flex;
+    justify-content: center;
+    
+}
+
+input {
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 20px;
+}
+
