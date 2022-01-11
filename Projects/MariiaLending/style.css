@@ -1,0 +1,139 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: content-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style:none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+/* --------------------------------------------------------------------- */
+.wrapper {
+    min-height: 100%;
+    overflow: inherit;
+    display: flex;
+    flex-direction: column;
+}
+/* --------------------------------------------------------------------- */
+._container {
+    max-width: 1046px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+/* ---HEADER------------------------------------------------------------------ */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 56;
+}
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+.header__logo {
+    max-width: 66px;
+}
+@media (max-width: 479px){
+    .header__logo {
+        max-width: 36px; 
+    }
+}
+.header__menu {
+    margin: 0px 0px 0px 133px;
+}
+@media (max-width:992px) {
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+@media (max-width:767px) {
+    .header__menu {
+        margin: 0px 0px 0px 40px;
+    }
+}
+@media (max-width:479px) {
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+.menu {
+    padding: 5px 0;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item:not(:last-child) {
+    margin: 0px 21px 0px 0px;
+}
+.menu__link {
+    color: #737373;
+    font-weight: 600;
+    line-height: calc((24 / 14) * 100%) ;
+}
+@media (max-width:479px) {
+    .menu__link {
+        font-size:18px;
+    }
+}
+/* ---PAGE------------------------------------------------------------------ */
+.page {
+    flex: 1 1 auto;
+}
+/* ---MAIN------------------------------------------------------------------ */
+.page__main-block {
+}
+.main-block {
+}
+.main-block__container {
+}
+.container {
+}
+.body {
+}
+.main-block__title {
+}
+.text {
+}
+.main-block__buttons {
+}
+.button {
+}
+.button_border {
+}
+/* ---FOOTER------------------------------------------------------------------ */
+.footer {
+
+}
