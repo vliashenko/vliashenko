@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     border: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 a {
     text-decoration: none;
@@ -48,6 +48,18 @@ body {
     max-width: 1046px;
     padding: 0px 15px;
     margin: 0px auto;
+    box-sizing: content-box;
+}
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit:cover;
 }
 /* ---HEADER------------------------------------------------------------------ */
 .header {
@@ -99,8 +111,9 @@ body {
     margin: 0px 21px 0px 0px;
 }
 .menu__link {
-    color: #737373;
+    color: #69cdfc;
     font-weight: 600;
+    text-shadow: 1px 1px 2px #ffffff;
     line-height: calc((24 / 14) * 100%) ;
 }
 @media (max-width:479px) {
@@ -113,26 +126,74 @@ body {
     flex: 1 1 auto;
 }
 /* ---MAIN------------------------------------------------------------------ */
-.page__main-block {
-}
 .main-block {
+    position: relative;
 }
-.main-block__container {
+.main-block__container { 
+    max-width: 1046px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+.main-block__body {
+    padding: 184px 0px 191px 0px;
+    position: relative;
+    z-index: 2;
+    top: 186px;
+    max-width: 509px;
+    margin-left: auto;
+}
+.main-block__body> *:not(last-child){
+    margin: 0px 0px 35px 0px;
 }
 .container {
 }
 .body {
 }
 .main-block__title {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: calc(80 / 68 * 100%);
+    color:#22b9ff ;
+    text-shadow: 1px 1px 2px #ffffff;
+    letter-spacing: 0.2px;
 }
-.text {
+.main-block__text {
+    color:#22b9ff ;
+    text-shadow: 1px 1px 2px #ffffff;
+    font-size: 20px;
+    line-height:1.5;
 }
 .main-block__buttons {
+    display: inline-flex;
 }
-.button {
+.main-block__button {
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 36px;
+    min-height: 48px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 150%;
+}
+.main-block__button_blue{
+    background: #70d2ff;
+    color:#ffffff
 }
 .button_border {
 }
+.main-block__button_border{
+}
+.main-block__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
 /* ---FOOTER------------------------------------------------------------------ */
 .footer {
 
