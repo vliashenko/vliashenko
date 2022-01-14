@@ -465,7 +465,7 @@ body {
 .products__body__title {
     font-size: 20px;
     line-height:1.5;
-    padding: 0px 25px 55px 25px;
+    padding: 170px 25px 55px 25px;
     text-align: center;
 }
 .products__body {
@@ -594,7 +594,7 @@ body {
 
   .mySlides q, p{
     color:#ffffff;
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
   .mySlides q {
     font-size: 15px;
