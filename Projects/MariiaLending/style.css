@@ -251,34 +251,128 @@ body {
     line-height:142%;
 }
 /*--------------------------------------------------------------------------------*/
-.page__details {
-}
-.details {
-}
-.details__container {
-}
 
 .details__body__title {
     font-size: 20px;
     line-height:1.5;
-    padding: 10px 25px 25px 25px;
+    padding: 10px 25px 45px 25px;
     text-align: center;
 }
 .details__body {
     display: block;
     margin: 5px 10px 175px 10px;
 }
-.details__column {
-    margin: 5px 10px 25px 10px;
-}
-.details__item {
-}
-.details__item__text {
+
+:root {
+    --red: #70d2ff;
+    --transitionDuration: 0.2s;
+    --transitionTimingFunction: linear;
+    --time: var(--transitionDuration) var(--transitionTimingFunction);
+  }
+  .container {
+    max-width: 1046px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .accordion {
+    --gray: #e7e7e7;
+  }
+  
+  .accordion__item {
+    --backgroundColor: #ffffff;
+  }
+  
+  .accordion__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .accordion__header {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray);
+    user-select: none;
+    background-color: var(--backgroundColor);
+    border-radius:13px;
+  }
+  
+  .accordion__header__title {
+    padding-right: 10px;
+    transition: color var(--time);
+  }
+  
+  .accordion__item.active {
+    height: 152;
+  }
+  
+  .accordion__item.active .accordion__header__title {
+    color: var(--red)
+  }
+  
+  .accordion__header__img {
+    margin-right: 20px;
+    border-right: 1px solid var(--gray);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion__header__img-circle {
+    border: 1px solid #505050;
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color var(--time);
+  }
+  
+  .accordion__item.active .accordion__header__img-circle {
+    border-color: var(--red);
+  }
+  
+  .accordion__header__img-circle::before,
+  .accordion__header__img-circle::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #505050;
+    transition: background-color var(--time), transform var(--time);
+  }
+  
+  .accordion__item.active .accordion__header__img-circle::before,
+  .accordion__item.active .accordion__header__img-circle::after {
+    background-color: var(--red);
+  }
+  
+  .accordion__item.active .accordion__header__img-circle::before {
+    transform: rotate(0deg);
+  }
+  
+  .accordion__header__img-circle::before {
+    transform: rotate(90deg);
+  }
+  
+  .accordion__text {
+    border: 1px solid var(--gray);
+    border-radius:13px;
+    border-top: none;
+    padding: 14px;
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 0.1px;
-    line-height:142%;
-}
+    letter-spacing: 1.5;
+  }
+  
+  .accordion__text__wrapper {
+    overflow: hidden;
+    height: 0px;
+    background-color: var(--backgroundColor);
+    transition: height var(--time);
+  }
 /*--------------------------------------------------------------------------------*/
 .biography__body__title {
     font-size: 20px;
@@ -431,7 +525,92 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
+/*-----------------------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow__container {
+    position: relative;
+    background: #77d4ff;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 55px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;  
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #0099ff;
+    color: white;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #41c0ff;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .activated, .dot:hover {
+    background-color: #0099ff;
+  }
+
+  .mySlides q, p{
+    color:#ffffff;
+    padding: 15px 0px;
+  }
+  .mySlides q {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height:142%;
+  }
+  .mySlides p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    line-height:142%;
+  }
 /* ---FOOTER------------------------------------------------------------------ */
 .footer {
 
 }
+
+/*------------------------------------------------------------------------------*/
