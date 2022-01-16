@@ -1,3 +1,5 @@
+
+//---Accordion----------------------------------------------------
 const accordion__items = [...document.querySelectorAll('.accordion__item')]; // Получаю элементы .accordion__item
 
 accordion__items.forEach((item) => { // прохожусь по ним в цикле
@@ -32,8 +34,49 @@ accordion__items.forEach((item) => { // прохожусь по ним в цик
   });
 });
 
-//---------------------------------------------------------------------------------------------------------------------------
+//-------MODAL----------------------------------------------------------------------------------- 
 
+const modalTrigger = document.querySelector('.main-block__button_blue'),
+modal = document.querySelector('.modal'),
+modalCloseBtnSubmit = document.querySelector('.btn_min'),
+formSubmit = document.querySelector("#formSubmit"),
+modalCloseBtn = document.querySelector('[data-close]');
+
+modalTrigger.addEventListener('click', openModal);
+
+
+// modalCloseBtnSubmit.addEventListener('click', closeModal)
+
+
+
+function closeModal() {
+modal.classList.add('hide');
+modal.classList.remove('show');
+document.body.style.overflow = '';
+}
+
+function openModal() {
+modal.classList.add('show');
+modal.classList.remove('hide');
+document.body.style.overflow = 'hidden';
+}
+
+modalCloseBtn.addEventListener('click', closeModal);
+
+modal.addEventListener('click', (e) => {
+if (e.target === modal) {
+    closeModal();
+}
+});
+
+document.addEventListener('keydown', (e) => {
+if (e.code === "Escape" && modal.classList.contains('show')) { 
+    closeModal();
+}
+});
+
+
+//-----QUOTE-SLIDER----------------------------------------------------------------------------------------------------------------------
 
 let slideIndex = 1;
 showSlides(slideIndex);
