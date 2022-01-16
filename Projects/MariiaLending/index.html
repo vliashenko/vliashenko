@@ -7,6 +7,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>website</title>
 </head>
@@ -27,7 +29,7 @@
                             <a href="#products_anchor" class="menu__link">Послуги</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Контакти</a>
+                            <a href="#getInTouch-anchor" class="menu__link">Контакти</a>
                         </li>
                     </ul>
                 </nav>
@@ -38,7 +40,7 @@
                 <div class="main-block__container _container">
                     <div class="main-block__body">
                         <h1 class="main-block__title">Допоможемо розвинути потенціал дитини </h1>
-                        <div class="main-block__text">А також адаптувати до мікро та марки соціуму </div>
+                        <div class="main-block__text">А також адаптувати до мікро - макросоціуму </div>
                         <div class="main-block__buttons">
                             <a href="#" class="main-block__button main-block__button_blue">Записатись на прийом</a>
                             <a href="#details__anchor" class="main-block__button main-block__button_border">Дізнатісь
@@ -124,7 +126,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="accordion__header__title">Спілкування</div>
+                                        <div class="accordion__header__title">Проблеми у спілкуванні</div>
                                     </div>
                                     <div class="accordion__text__wrapper">
                                         <div class="accordion__text">
@@ -296,7 +298,7 @@
                                 <div class="product__item__title">Індивідуальна консультація </div>
                                 <div class="products__item__text">Очна психотерапія або психологічне консультування в
                                     індивідуальному форматі дозволяє ефективно працювати з проблемою. </div>
-                                <div class="product__item__price">450 uah</div>
+                                <div class="product__item__price">300 uah</div>
                             </div>
                         </div>
                         <div class="products__column">
@@ -307,7 +309,7 @@
                                 <div class="product__item__title">Психодіагностика та Профконсультація </div>
                                 <div class="products__item__text">Проведення тестування виявлення особистісних
                                     особливостей, професійної спрямованості. </div>
-                                <div class="product__item__price">500 uah</div>
+                                <div class="product__item__price">360 uah</div>
                             </div>
                         </div>
                         <div class="products__column">
@@ -318,7 +320,7 @@
                                 <div class="product__item__title">Корекція </div>
                                 <div class="products__item__text">Формування необхідних психологічних якостей,
                                     підвищення соціалізації та адаптації до життєвих умов, що змінюються. </div>
-                                <div class="product__item__price">600 uah</div>
+                                <div class="product__item__price">400 uah</div>
                             </div>
                         </div>
                     </div>
@@ -339,16 +341,30 @@
             <section class="page__getInTouch getInTouch">
                 <div class="getInTouch__container _container">
                     <div class="getInTouch__header header-block">
-                        <h2 class="header-block__title">Контакти</h2>
+                        <h2 id="getInTouch-anchor" class="header-block__title">Контакти</h2>
                         <div class="header-block__sub-title">Запис на консультацію можливий за телефоном</div>
-                        <h2 class="header-block__title__two">+38-068-84-85-643</h2>
+                        <h2 class="header-block__title__two">+38-063-42-87-069</h2>
                         <div class="header-block__sub-title_two">Також у соцільних мережах( Telegram, Viber ), або через
                             форму на сайті.</div>
                     </div>
                     <div class="getInTouch__items">
                         <div class="getInTouch__item item">
-                            <div class="item-getInTouch__icon"></div>
-                            <div class="item-getInTouch__links"></div>
+                            <div class="item-getInTouch__icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="item-getInTouch__links">Перейти на сторінку у Telegram
+                                <p>@marimashovets</p>
+                            </div>
+                            <a href="https://t.me/@marimashovets" class="item-getInTouch__button">Написати</a>
+                        </div>
+                        <div class="getInTouch__item item">
+                            <div class="item-getInTouch__icon">
+                                <i class="fab fa-viber"></i>
+                            </div>
+                            <div class="item-getInTouch__links">Перейти на сторінку у Viber
+                                <p>@marimashovets</p>
+                            </div>
+                            <a href="#" class="item-getInTouch__button">Написати</a>
                         </div>
                     </div>
                 </div>
@@ -366,10 +382,47 @@
                 </div>
             </div>
         </main>
-
         <footer class="footer">
-
-        </footer>
+            <div class="footer__top">
+                <div class="footer__main _container">
+                    <div class="footer__column">
+                        <div class="footer__label">Навігація</div>
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-list__item">
+                                    <a href="#details__anchor">Деталі</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#biography_anchor">Про себе</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#products_anchor">Полсуги</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#getInTouch-anchor">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__label">Зворотній зв'язок</div>
+                        <nav class="footer__menu menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-list__item">Телефон: +380634287069</li>
+                                <li class="menu-list__item">E-mail: mashovets.maria@ukr.net</li>
+                                <li class="menu-list__item"><i class="fab fa-telegram"></i>Telegram: @marimashovets</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+             </div>
+                <div class="footer__bottom"></div>
+                <div class="footer__container container">
+                    <div class="footer__copyright">Made with love by vliashenko All Rights Reserved</div>
+                </div>
+            </div>
+   
+    </footer>
     </div>
     <script src="script.js"></script>
 </body>
